@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:riverpod_expense_tracker/lecture_four_practice/show_transaction_result_message.dart';
+import 'package:riverpod_expense_tracker/lecture_four_practice/widgets/show_transaction_result_message.dart';
 import 'package:riverpod_expense_tracker/lecture_four_practice/transaction_logic.dart';
 
 class TransactionFormSheet extends ConsumerStatefulWidget {

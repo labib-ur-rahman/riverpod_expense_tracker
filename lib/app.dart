@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:riverpod_expense_tracker/lecture_four_practice/transaction_screen.dart';
+import 'package:riverpod_expense_tracker/lecture_five_practice/dashboard_screen.dart';
 import 'package:riverpod_expense_tracker/main.dart';
 
 class ExpenseTrackerApp extends ConsumerWidget {
@@ -13,7 +13,7 @@ class ExpenseTrackerApp extends ConsumerWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: appName,
-      home: const TransactionListScreen(),
+      home: const DerivedStateDashboard(),
     );
   }
 }

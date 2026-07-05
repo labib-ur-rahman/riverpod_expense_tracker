@@ -1,3 +1,5 @@
+# Unsigned Android Build and Release APK
+
 name: Build and Release APK
 
 on:
@@ -53,8 +55,8 @@ jobs:
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
-          tag_name: ${{ env.APP_VERSION }}
-          name: Release ${{ env.APP_VERSION }}
+          tag_name: ${{ steps.get_version.outputs.version }}
+          name: Release ${{ steps.get_version.outputs.version }}
           files: build/app/outputs/flutter-apk/app-release.apk
           draft: false
           prerelease: false
